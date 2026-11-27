@@ -172,3 +172,7 @@ scripts/       install and cluster job scripts
   doi       = {10.1145/3779208.3785386}
 }
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
