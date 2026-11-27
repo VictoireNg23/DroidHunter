@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "droidhunter"
+version = "1.0.0"
+readme = "README.md"
+authors = [{ name = "Victoire Nganfang" }]
+description = "DroidHunter: vision-based Android malware detection from Smali instructions"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "pillow>=9", "scikit-learn>=1.2", "joblib>=1.2", "torch>=2.1", "transformers>=4.30,<5"]
+
+[project.scripts]
+droidhunter = "droidhunter.cli:main"
+
+[tool.setuptools]
+packages = ["droidhunter"]
